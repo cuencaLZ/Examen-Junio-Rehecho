@@ -30,7 +30,7 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
 		
 	}
 
-	public Object getNumBultos() {
+	public int getNumBultos() {
 		return numBultos;
 	}
 
@@ -43,7 +43,7 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
 		
 	}
 
-	public Object getPesoTotal() {
+	public int getPesoTotal() {
 		return pesoTotal;
 	}
 }
