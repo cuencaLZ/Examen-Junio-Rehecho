@@ -26,13 +26,12 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
 	}
 
 	public void calcularTotalBultos() {
-		return pedidos.size();
+		 this.numBultos=pedidos.size();
 		
 	}
 
 	public Object getNumBultos() {
-		// TODO Apéndice de método generado automáticamente
-		return null;
+		return numBultos;
 	}
 
 	public void calcularPesoTotal() {
@@ -42,5 +41,9 @@ public class TratamientoPedidoMultiple implements TratamientoPedido {
 			
 		}
 		
+	}
+
+	public Object getPesoTotal() {
+		return pesoTotal;
 	}
 }

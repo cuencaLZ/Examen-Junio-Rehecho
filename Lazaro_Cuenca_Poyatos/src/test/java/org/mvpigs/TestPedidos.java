@@ -1,9 +1,14 @@
 package org.mvpigs;
 
+
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 import org.junit.Test;
 import org.mvpigs.commandpattern.interfaces.Pedido;
@@ -202,7 +207,10 @@ public class TestPedidos {
          * 
          * Pasasela a TratamientoPedidosMultiple en su constructor.
          */
-
+    	Set<Pedido> pedidos = new LinkedHashSet<Pedido>();
+    	pedidos.add(new PedidoNacional("Rohan", 10));
+    	pedidos.add(new PedidoNacional("Gondor", 10));
+    	pedidos.add(new PedidoNacional("Minas", 10));
         // Coleccion pedidos
         assertTrue(pedidos.size() == 3);
 
